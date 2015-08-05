@@ -6,18 +6,15 @@ var filter;
 
 if(process.argv.length<4)
 {
-  var s='./';
-  filter='.iml';
+  var s='.';
+  filter='.js';
 }
 else {
   var s=process.argv[2];
   filter='.'+process.argv[3];
 }
 
-
-
 var buffer = fs.readdir(s,pungsiku);
-
 
 function pungsiku(err,data){
 
